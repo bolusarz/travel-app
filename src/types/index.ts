@@ -27,10 +27,4 @@ export const ActionTypes = {
   REMOVE_ATTRACTION: "REMOVE_ATTRACTION",
 };
 
-export type AppAction =
-  | { type: ActionTypes.ADD_FLIGHT; payload: string }
-  | { type: ActionTypes.REMOVE_FLIGHT; payload: string }
-  | { type: ActionTypes.ADD_HOTEL; payload: FetchHotelDetailsParams }
-  | { type: ActionTypes.REMOVE_HOTEL; payload: string }
-  | { type: ActionTypes.ADD_ATTRACTION; payload: string }
-  | { type: ActionTypes.REMOVE_ATTRACTION; payload: string };
+export type AppAction = { type: string; payload: any };

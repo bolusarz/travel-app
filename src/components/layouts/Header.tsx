@@ -33,7 +33,7 @@ export default Header;
 
 const SearchBar: React.FC<{
   value: string;
-  onChange: (value) => void;
+  onChange: (value: string) => void;
   className?: string;
 }> = ({ value, onChange, className }) => {
   return (

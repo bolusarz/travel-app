@@ -22,7 +22,7 @@ const AutoCompleteInput: React.FC<Prop> = ({
   const [showSuggestions, setShowSuggestions] = useState(false);
   const debouncedValue = useDebounce(query, 600);
 
-  const handleInputChange = (event) => {
+  const handleInputChange = (event: any) => {
     setShowSuggestions(true);
     const value = event.target.value;
     setQuery(value);

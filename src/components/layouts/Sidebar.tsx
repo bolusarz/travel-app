@@ -1,9 +1,7 @@
 import React, { ReactElement } from "react";
 import {
   AeroplaneIcon,
-  AirplaneInFlightIcon,
   CaretUpDownIcon,
-  ChevronDownIcon,
   DocumentIcon,
   ExpressIcon,
   FirstAidIcon,

@@ -6,7 +6,7 @@ export class ApiService {
     "Content-Type": "application/json",
   };
 
-  static async get<T extends Record<string, never>>(
+  static async get<T>(
     endpoint: string,
     config?: {
       query?: Record<string, string>;
