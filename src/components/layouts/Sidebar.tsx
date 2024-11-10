@@ -17,7 +17,7 @@ type Prop = object;
 
 const Sidebar: React.FC<Prop> = () => {
   return (
-    <aside className="p-6 pb-[96px] bg-white w-[300px] flex gap-16 flex-col">
+    <aside className="p-6 pb-[96px] h-fit bg-white w-[300px] flex gap-16 flex-col">
       <Menu />
       <AccountSwitcher />
     </aside>

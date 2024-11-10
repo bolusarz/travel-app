@@ -20,7 +20,7 @@ type Prop = object;
 const Header: React.FC<Prop> = () => {
   return (
     <header className="p-10 flex justify-between bg-white">
-      <div className="flex gap-7">
+      <div className="flex gap-7 items-center">
         <Logo />
         <SearchBar value="" onChange={console.log} />
       </div>
@@ -60,7 +60,7 @@ const SearchBar: React.FC<{
 const Menu: React.FC = () => (
   <nav className="flex gap-6 items-center">
     <MenuItem
-      title="TripDetailsLayout"
+      title="Home"
       icon={<HomeIcon size={32} color="#667185" />}
       active={false}
     />
@@ -97,7 +97,7 @@ const Menu: React.FC = () => (
       title="Carts"
       icon={<BasketIcon size={32} color="#344054" />}
       active={false}
-    />{" "}
+    />
     <MenuItem
       title="Create"
       icon={<PlusInSquareIcon size={32} color="#344054" />}
@@ -112,7 +112,7 @@ const MenuItem: React.FC<{
   icon: ReactElement;
   active: boolean;
 }> = ({ title, active, icon }) => (
-  <a href="#" className="flex flex-col gap-2 items-center">
+  <a href="#" className="flex flex-col text-sm gap-2 items-center">
     {icon}
     <span
       className={
